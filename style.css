@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.main{
+    text-align: center;
+}
+
+.inputDiv{
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1{
+    color: #ebaffa;
+    text-shadow: 4px 0px 3px #440544, 0px 4px 3px #440544, -2px 0px 3px #440544, 0px -2px 3px #440544;
+    font-size: 3.5em;
+    margin: 20px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.selectDiv{
+    border: 2px solid #440544;
+    border-radius: 5px;
+}
+
+#hrs{
+    width: 50px;
+    height: 34px;
+    font-size: 0.8em;
+    text-align: center;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#mint{
+    width: 50px;
+    height: 34px;
+    font-size: 0.8em;
+    border: none;
+    text-align: center;
+}
+
+#ampm{
+    width: 50px;
+    height: 34px;
+    font-size: 0.8em;
+    border: none;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#hrs:focus, #mint:focus, #ampm:focus{
+    outline: none;
+}
+
+.workInput{
+    width: 30%;
+    height: 34px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #440544;
+    padding: 0px 5px;
+    margin: 0px 5px;
+}
+
+.workInput:focus{
+    outline: none;
+    border: 2px solid #440544;
+    box-shadow: 0px 3px 5px #440544;
+} 
+
+.btnAdd{
+    background-color: #5d0188;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    margin: 0px 5px;
+
+}
+
+.fa-plus-square{
+    padding: 1px 3px 0px 2px;
+    color: white;
+    font-size: 2.6em !important;
+}
+
+.btnDltAll{
+    border: none;
+    background-color: #5d0188;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.fa-trash{
+    padding: 1px 3px;
+    color: white;
+    font-size: 2.6em !important;
+}
+
+.headingDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0px auto;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.5em;
+    color: #165877;
+}
+
+h2{
+    font-size: 1.8em;
+    color: purple;
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#clock p{
+    width: 25px;
+}
+
+.tabDiv{
+    width: 50%;
+    height: 400px;
+    overflow: auto;
+    margin: 0px auto;
+    align-items: center;
+}
+
+table{
+    width: 95%;
+    border-spacing: 0 10px;
+    font-size: 1em;
+    color: white;
+}
+
+tr{
+    background-image: linear-gradient(#c653c6, #ac39ac, #732673);
+    background-repeat: no-repeat;
+}
+
+table td{
+    width: 6%;
+    padding: 10px 5px;
+}
+
+td:nth-child(2){
+    width: 13%;
+}
+
+td:nth-child(3){
+    text-align: left;
+    width: 80%;
+}
+
+td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+td:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}    
+
+table button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-trash-o{
+    font-size: 1.7em !important;
+    color: white;
+    padding: 0px 5px;
+}
+
+.tabDiv::-webkit-scrollbar, #mint::-webkit-scrollbar{
+    width: 1%;
+}
+.tabDiv::-webkit-scrollbar-track, #mint::-webkit-scrollbar-track{
+    background-color: #c481f1;
+}
+.tabDiv::-webkit-scrollbar-thumb{
+    background-image: radial-gradient(#c481f1, #9523e2, #3f0466);    
+    border-radius: 10px;       
+}
+
+
+
+

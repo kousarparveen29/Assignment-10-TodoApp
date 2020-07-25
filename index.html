@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bodyDiv">
+        <div class="main">
+            <h1>Todo Application</h1>
+            <div class="inputDiv">
+                <div class="selectDiv">
+                    <select name="hour" id="hrs"
+                        ><option value="00">Hr</option
+                    ></select
+                    ><select name="minute" id="mint"
+                        ><option value="00">Min</option
+                    ></select
+                    ><select name="format" id="ampm"
+                        ><option value="AM">AM</option
+                        ><option value="PM">PM</option
+                    ></select>
+                </div>
+                    <input type="text" id="work" class="workInput" placeholder="Enter todo item">
+                    <div>
+                    <button onclick="btnAdd()" class="btnAdd"><i class="fa fa-plus-square"
+                            aria-hidden="true"></i></button>
+                    <button onclick="deletAll()" class="btnDltAll"><i class="fa fa-trash"
+                            aria-hidden="true"></i></button>
+                        </div>
+
+            </div>
+
+
+            <div class="secondMain">
+                <h2>Todo List</h2>
+                <div class="headingDiv">
+                    <h4 id="dateDay"></h4>
+                    <h4 id="clock">
+                        <p id="hr"></p><span>:</span>
+                        <p id="min"></p><span>:</span>
+                        <p id="sec"></p>
+                        <p id="format"></p>
+                    </h4>
+                </div>
+                <div class="tabDiv">
+                    <table id="tab">
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
